@@ -1,0 +1,9 @@
+DELIMITER $$
+CREATE PROCEDURE Number13()
+BEGIN
+SELECT ProductID, ProductName, UnitPrice 
+FROM Products
+ORDER BY UnitPrice DESC
+LIMIT 1;
+END$$
+DELIMITER ;

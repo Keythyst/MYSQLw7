@@ -1,0 +1,8 @@
+DELIMITER $$
+CREATE PROCEDURE Number10()
+BEGIN
+SELECT OrderID, OrderDate, Freight FROM orders
+ORDER BY Freight DESC
+LIMIT 1;
+END$$
+DELIMITER ;

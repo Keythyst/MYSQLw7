@@ -1,0 +1,6 @@
+DELIMITER $$
+SELECT count(*)
+BEGIN
+FROM customers
+END $$
+DELIMITER ;

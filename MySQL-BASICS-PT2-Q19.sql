@@ -1,0 +1,9 @@
+DELIMITER $$
+CREATE PROCEDURE Number19()
+BEGIN
+SELECT Freight, ShipRegion 
+FROM orders
+WHERE ShipRegion IS NOT NULL
+ORDER BY Freight DESC;
+END$$
+DELIMITER ;

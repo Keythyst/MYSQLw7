@@ -1,0 +1,7 @@
+DELIMITER $$
+CREATE PROCEDURE Number12()
+BEGIN
+SELECT EmployeeID,LastName, FirstName 
+FROM employees;
+END$$
+DELIMITER ;

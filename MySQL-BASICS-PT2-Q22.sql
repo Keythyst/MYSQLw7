@@ -1,0 +1,8 @@
+DELIMITER $$
+CREATE PROCEDURE Number22()
+BEGIN
+SELECT CustomerID, CompanyName, Region
+FROM customers
+WHERE Region IS NULL ;
+END$$
+DELIMITER ;

@@ -1,0 +1,8 @@
+DELIMITER $$
+CREATE PROCEDURE Number18()
+BEGIN
+SELECT EmployeeID, ShipRegion, COUNT('ShipVia')
+FROM orders
+WHERE ShipRegion IS NOT NULL;
+END$$
+DELIMITER ;
